@@ -1,0 +1,62 @@
+{
+    "litegram:command": {
+      "scope": "php",
+      "prefix": "lite:command",
+      "description": "Match command messages.",
+      "body": [
+            "bot()->command(['${1|start,help,settings,etc|}'], function () {",
+            "\t${0:// code...}",
+            "});"
+        ]
+    },
+    "litegram:callback": {
+        "scope": "php",
+        "prefix": "lite:callback",
+        "description": "Match callback updates.",
+        "body": [
+            "bot()->callback(['${1:callback_data}'], function () {",
+            "\t${0:// code...}",
+            "});"
+        ]
+    },
+    "litegram:inline": {
+        "scope": "php",
+        "prefix": "lite:inline",
+        "description": "Match inline updates.",
+        "body": [
+            "bot()->inline(['${1:inline_query}'], function () {",
+            "\t${0:// code...}",
+            "});"
+        ]
+    },
+    "litegram:hear": {
+        "scope": "php",
+        "prefix": "lite:hear",
+        "description": "Match text messages.",
+        "body": [
+            "bot()->hear(['$1'], function () {",
+            "\t${0:// code...}",
+            "});"
+        ]
+    },
+    "litegram:on": {
+        "scope": "php",
+        "prefix": "lite:on",
+        "description": "Match any updates from Telegram.",
+        "body": [
+            "bot()->on(['${1|message.text,callback_query.data,inline_query.query,etc|}' => '$2'], function () {",
+            "\t${0:// code...}",
+            "});"
+        ]
+    },
+    "litegram:chain": {
+        "scope": "php",
+        "prefix": "lite:chain",
+        "description": "Chain conversation.",
+        "body": [
+            "bot()->chain('${1:current}', ${2|'next',null|}, function () {",
+            "\t${0:// code...}",
+            "}, ['${3:message.text}' => '${4:/cancel}']);"
+        ]
+    },
+}

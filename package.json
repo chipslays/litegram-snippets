@@ -1,8 +1,9 @@
 {
     "name": "litegram-snippets",
-    "displayName": "litegram-snippets",
-    "description": "Litegram code snippets.",
-    "version": "0.0.2",
+    "displayName": "Litegram Snippets",
+    "description": "Litegram snippets for VS Code.",
+    "icon": "images/icon.png",
+    "version": "0.0.3",
     "publisher": "chipslays",
     "repository": "https://github.com/chipslays/litegram-snippets",
     "engines": {

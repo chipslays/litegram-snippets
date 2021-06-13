@@ -1,9 +1,7 @@
 # Change Log
 
-All notable changes to the "litegram-snippets" extension will be documented in this file.
+## [0.0.2] - 2021-06-13
+- Update README.md
 
-Check [Keep a Changelog](http://keepachangelog.com/) for recommendations on how to structure this file.
-
-## [Unreleased]
-
+## [0.0.1] - 2021-06-13
 - Initial release

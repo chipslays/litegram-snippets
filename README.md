@@ -1,4 +1,4 @@
-# Litegram Snippets
+# [Litegram Snippets](https://marketplace.visualstudio.com/items?itemName=chipslays.litegram-snippets)
 
 Litegram snippets for Visual Studio Code.
 
